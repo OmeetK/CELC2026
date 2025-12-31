@@ -8,6 +8,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
             <a href="schedule.html" class="nav-link">Schedule</a>
             <a href="about.html" class="nav-link">About</a>
             <a href="team.html" class="nav-link">Team</a>
@@ -15,53 +16,55 @@
         </div>
     </nav>
 
-    <div class="image-top">
-        <div class="image-track">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
-            <img src="images/image4.JPG" alt="CELC">
-            <img src="images/image5.JPG" alt="CELC">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
-            <img src="images/image4.JPG" alt="CELC">
-            <img src="images/image5.JPG" alt="CELC">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
+    <div class="page-container">
+        <div class="image-top">
+            <div class="image-track">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+                <img src="images/image4.JPG" alt="CELC">
+                <img src="images/image5.JPG" alt="CELC">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+                <img src="images/image4.JPG" alt="CELC">
+                <img src="images/image5.JPG" alt="CELC">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+            </div>
         </div>
-    </div>
 
-    <main class="hero">
-        <div class="number left">20</div>
-        <div class="logo-container">
-            <img src="images/celc logo.png" alt="CELC Logo" class="logo">
-        </div>
-        <div class="number right">26</div>
-    </main>
+        <main class="hero">
+            <div class="number left">20</div>
+            <div class="logo-container">
+                <img src="images/celc logo.png" alt="CELC Logo" class="logo">
+            </div>
+            <div class="number right">26</div>
+        </main>
 
-    <div class="image-bottom">
-        <div class="image-track">
-            <img src="images/image3.JPG" alt="CELC">
-            <img src="images/image4.JPG" alt="CELC">
-            <img src="images/image5.JPG" alt="CELC">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
-            <img src="images/image5.JPG" alt="CELC">
-            <img src="images/image4.JPG" alt="CELC">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
-            <img src="images/image4.JPG" alt="CELC">
-            <img src="images/image5.JPG" alt="CELC">
-            <img src="images/image1.JPG" alt="CELC">
-            <img src="images/image2.JPG" alt="CELC">
-            <img src="images/image3.JPG" alt="CELC">
+        <div class="image-bottom">
+            <div class="image-track">
+                <img src="images/image3.JPG" alt="CELC">
+                <img src="images/image4.JPG" alt="CELC">
+                <img src="images/image5.JPG" alt="CELC">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+                <img src="images/image5.JPG" alt="CELC">
+                <img src="images/image4.JPG" alt="CELC">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+                <img src="images/image4.JPG" alt="CELC">
+                <img src="images/image5.JPG" alt="CELC">
+                <img src="images/image1.JPG" alt="CELC">
+                <img src="images/image2.JPG" alt="CELC">
+                <img src="images/image3.JPG" alt="CELC">
+            </div>
         </div>
     </div>
 
@@ -72,11 +75,15 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
         body {
             font-family: 'Arial', 'Helvetica Neue', sans-serif;
             background: #512685;
             color: white;
-            overflow-x: hidden;
             margin: 0;
             padding: 0;
         }
@@ -130,22 +137,29 @@
             width: 100%;
         }
 
+        .page-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+
         .image-top,
         .image-bottom {
             width: 100%;
             overflow: hidden;
             background: rgba(0, 0, 0, 0.3);
-            padding: 0;
-            position: relative;
-            margin: 0;
+            flex-shrink: 0;
         }
 
         .image-top {
-            margin-top: 60px;
+            height: 15vh;
+            min-height: 80px;
         }
 
         .image-bottom {
-            margin-bottom: 0;
+            height: 15vh;
+            min-height: 80px;
         }
 
         .image-track {
@@ -153,10 +167,11 @@
             gap: 0;
             animation: scroll 30s linear infinite;
             will-change: transform;
+            height: 100%;
         }
 
         .image-track img {
-            height: 150px;
+            height: 100%;
             width: auto;
             object-fit: cover;
             flex-shrink: 0;
@@ -173,17 +188,18 @@
         }
 
         .hero {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: calc(100vh - 360px);
-            padding: 40px 20px;
+            padding: 20px;
             position: relative;
             overflow: hidden;
+            min-height: 0;
         }
 
         .number {
-            font-size: clamp(150px, 45vh, 600px);
+            font-size: clamp(100px, 35vh, 500px);
             font-weight: 900;
             color: white;
             opacity: 0.25;
@@ -203,20 +219,19 @@
         }
 
         .logo-container {
-            max-width: 500px;
-            width: 35vw;
-            max-height: 55vh;
+            max-width: min(500px, 40vw);
+            width: 100%;
+            max-height: 50vh;
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 10;
-            padding: 20px;
         }
 
         .logo {
             width: 100%;
             height: auto;
-            max-height: 55vh;
+            max-height: 50vh;
             object-fit: contain;
             filter: drop-shadow(0 15px 50px rgba(0, 0, 0, 0.7));
             animation: fadeIn 1.2s ease-in;
@@ -236,16 +251,11 @@
         /* Tablet styles */
         @media (max-width: 1024px) {
             .number {
-                font-size: clamp(120px, 35vh, 400px);
+                font-size: clamp(80px, 30vh, 400px);
             }
 
             .logo-container {
-                max-width: 350px;
-                width: 40vw;
-            }
-
-            .image-track img {
-                height: 120px;
+                max-width: min(400px, 45vw);
             }
         }
 
@@ -266,21 +276,18 @@
                 letter-spacing: 1px;
             }
 
-            .image-top {
-                margin-top: 50px;
+            .page-container {
+                padding-top: 50px;
             }
 
-            .image-track img {
-                height: 100px;
-            }
-
-            .hero {
-                min-height: calc(100vh - 300px);
-                padding: 30px 10px;
+            .image-top,
+            .image-bottom {
+                height: 12vh;
+                min-height: 60px;
             }
 
             .number {
-                font-size: clamp(80px, 25vh, 250px);
+                font-size: clamp(60px, 22vh, 200px);
                 opacity: 0.2;
             }
             
@@ -293,9 +300,12 @@
             }
             
             .logo-container {
-                max-width: 250px;
-                width: 50vw;
-                padding: 10px;
+                max-width: min(250px, 55vw);
+                max-height: 45vh;
+            }
+
+            .logo {
+                max-height: 45vh;
             }
         }
 
@@ -306,32 +316,65 @@
                 padding: 5px 8px;
             }
 
-            .image-track img {
-                height: 80px;
+            .image-top,
+            .image-bottom {
+                height: 10vh;
+                min-height: 50px;
             }
 
             .number {
-                font-size: clamp(60px, 20vh, 180px);
+                font-size: clamp(50px, 18vh, 150px);
             }
 
             .logo-container {
-                max-width: 200px;
-                width: 45vw;
+                max-width: min(200px, 60vw);
+                max-height: 40vh;
+            }
+
+            .logo {
+                max-height: 40vh;
             }
         }
 
         /* Landscape phone orientation */
         @media (max-width: 768px) and (orientation: landscape) {
-            .hero {
-                min-height: calc(100vh - 200px);
+            .page-container {
+                padding-top: 45px;
+            }
+
+            .image-top,
+            .image-bottom {
+                height: 18vh;
+                min-height: 60px;
             }
 
             .number {
-                font-size: clamp(100px, 30vh, 300px);
+                font-size: clamp(70px, 25vh, 250px);
             }
 
-            .image-track img {
-                height: 80px;
+            .logo-container {
+                max-width: min(300px, 35vw);
+                max-height: 50vh;
+            }
+
+            .logo {
+                max-height: 50vh;
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 360px) {
+            .nav-link {
+                font-size: 8px;
+                padding: 4px 6px;
+            }
+
+            .number {
+                font-size: clamp(40px, 15vh, 120px);
+            }
+
+            .logo-container {
+                max-width: min(180px, 65vw);
             }
         }
     </style>
